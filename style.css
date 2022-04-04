@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+.main {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+
+/*** Styling Header ******/
+
+.header {
+    flex: 1;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: px;
+}
+
+.logo {
+    position: absolute;
+    margin-left: 300px;
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100px;
+}
+
+.nav-bar {
+    margin-left: 1100px;
+}
+
+.nav-bar>li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 20px;
+    font-size: 22px;
+    color: rgb(185, 183, 183);
+}
+
+.nav-bar>li:hover {
+    color: black;
+    cursor: pointer;
+    border-bottom: 5px solid green;
+}
+
+
+/***** Styling Introduction **********/
+
+.intro {
+    flex: 3;
+    background-color: rgb(255, 255, 255);
+    height: 1000px;
+}
+
+.intro>h2 {
+    font-size: 80px;
+    margin-left: 300px;
+}
+
+.intro>p {
+    font-size: large;
+    margin-left: 300px;
+    margin-top: -20px;
+}
+
+.intro>input {
+    margin-left: 300px;
+    margin-top: 20px;
+    width: 300px;
+    height: 45px;
+}
+
+:placeholder-shown {
+    font-size: large;
+}
+
+.intro>button {
+    width: 150px;
+    height: 50px;
+    font-size: large;
+    background-image: linear-gradient(to right, #97ce5c, #649e2c);
+    border: none;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.intro-image {
+    width: 700px;
+    position: absolute;
+    margin-top: -450px;
+    margin-left: 280px;
+}
+
+
+/*********** Styling Welcome Section***************/
+
+.welcome {
+    flex: 3;
+    background-color: rgb(255, 255, 255);
+    margin-top: 300px;
+}
+
+.chef-image {
+    width: 700px;
+    margin-left: 300px;
+    border-radius: 10px;
+}
+
+.welcome-content {
+    position: absolute;
+    margin-left: 1020px;
+    margin-top: -500px;
+    font-size: x-large;
+}
+
+.welcome-content>h6 {
+    font-size: 30px;
+    margin-bottom: -10px;
+    color: #fed04c;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+
+.welcome-content>h2 {
+    font-weight: 900;
+}
+
+.welcome-content>p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.welcome-content>button {
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    background-image: linear-gradient(to right, #97ce5c, #649e2c);
+    border: none;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+
+/******** Styling Choose Us Section ****************/
+
+.choose_us_head {
+    text-align: center;
+    margin: auto;
+}
+
+.choose_us_head>h6 {
+    font-size: 30px;
+    color: #fed04c;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    text-align: center;
+}
+
+.choose_us_head>h2 {
+    font-weight: 900;
+    font-size: 50px;
+}
+
+.choose_us {
+    flex: 3;
+    background-color: rgb(255, 255, 255);
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.various-menu,
+.delivery,
+.offers {
+    height: 350px;
+    width: 400px;
+    background-color: rgb(255, 255, 255);
+    margin: 10px;
+    margin-top: 50px !important;
+    text-align: center;
+    font-size: x-large;
+}
+
+.various-menu>img,
+.delivery>img,
+.offers>img {
+    width: 100px;
+    margin-top: 50px !important;
+}
+
+
+/**** Hover Effect ****/
+
+.various-menu:hover,
+.delivery:hover,
+.offers:hover {
+    box-shadow: -5px 10px 15px rgba(0, 0, 0, 0.5);
+    border-left: 5px solid green;
+    transform: scale(1.1);
+    transition: 1s;
+    cursor: pointer;
+}
+
+.menu {
+    flex: 3;
+    background-color: orange;
+}
