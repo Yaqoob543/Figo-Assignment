@@ -1,210 +1,554 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
-.main {
-    background-color: rgb(255, 255, 255);
-    display: flex;
-    width: 100vw;
-    height: 100vh;
-    flex-direction: column;
-    font-family: 'Josefin Sans', sans-serif;
-}
-
-
-/*** Styling Header ******/
-
-.header {
-    flex: 1;
-    background-color: rgb(255, 255, 255);
-    margin-bottom: px;
-}
-
-.logo {
-    position: absolute;
-    margin-left: 300px;
-    margin-top: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    width: 100px;
-}
-
-.nav-bar {
-    margin-left: 1100px;
-}
-
-.nav-bar>li {
-    list-style-type: none;
-    display: inline-block;
-    margin: 20px;
-    font-size: 22px;
-    color: rgb(185, 183, 183);
-}
-
-.nav-bar>li:hover {
-    color: black;
-    cursor: pointer;
-    border-bottom: 5px solid green;
-}
-
-
-/***** Styling Introduction **********/
-
-.intro {
-    flex: 3;
-    background-color: rgb(255, 255, 255);
-    height: 1000px;
-}
-
-.intro>h2 {
-    font-size: 80px;
-    margin-left: 300px;
-}
-
-.intro>p {
-    font-size: large;
-    margin-left: 300px;
-    margin-top: -20px;
-}
-
-.intro>input {
-    margin-left: 300px;
-    margin-top: 20px;
-    width: 300px;
-    height: 45px;
-}
-
-:placeholder-shown {
-    font-size: large;
-}
-
-.intro>button {
-    width: 150px;
-    height: 50px;
-    font-size: large;
-    background-image: linear-gradient(to right, #97ce5c, #649e2c);
-    border: none;
-    color: white;
-    border-radius: 3px;
-    cursor: pointer;
-}
-
-.intro-image {
-    width: 700px;
-    position: absolute;
-    margin-top: -450px;
-    margin-left: 280px;
-}
-
-
-/*********** Styling Welcome Section***************/
-
-.welcome {
-    flex: 3;
-    background-color: rgb(255, 255, 255);
-    margin-top: 300px;
-}
-
-.chef-image {
-    width: 700px;
-    margin-left: 300px;
-    border-radius: 10px;
-}
-
-.welcome-content {
-    position: absolute;
-    margin-left: 1020px;
-    margin-top: -500px;
-    font-size: x-large;
-}
-
-.welcome-content>h6 {
-    font-size: 30px;
-    margin-bottom: -10px;
-    color: #fed04c;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 500;
-}
-
-.welcome-content>h2 {
-    font-weight: 900;
-}
-
-.welcome-content>p {
-    font-family: Arial, Helvetica, sans-serif;
-    color: rgba(0, 0, 0, 0.5);
-}
-
-.welcome-content>button {
-    width: 200px;
-    height: 50px;
-    font-size: 20px;
-    background-image: linear-gradient(to right, #97ce5c, #649e2c);
-    border: none;
-    color: white;
-    border-radius: 3px;
-    cursor: pointer;
-}
-
-
-/******** Styling Choose Us Section ****************/
-
-.choose_us_head {
-    text-align: center;
-    margin: auto;
-}
-
-.choose_us_head>h6 {
-    font-size: 30px;
-    color: #fed04c;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 500;
-    text-align: center;
-}
-
-.choose_us_head>h2 {
-    font-weight: 900;
-    font-size: 50px;
-}
-
-.choose_us {
-    flex: 3;
-    background-color: rgb(255, 255, 255);
-    height: 500px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.various-menu,
-.delivery,
-.offers {
-    height: 350px;
-    width: 400px;
-    background-color: rgb(255, 255, 255);
-    margin: 10px;
-    margin-top: 50px !important;
-    text-align: center;
-    font-size: x-large;
-}
-
-.various-menu>img,
-.delivery>img,
-.offers>img {
-    width: 100px;
-    margin-top: 50px !important;
-}
-
-
-/**** Hover Effect ****/
-
-.various-menu:hover,
-.delivery:hover,
-.offers:hover {
-    box-shadow: -5px 10px 15px rgba(0, 0, 0, 0.5);
-    border-left: 5px solid green;
-    transform: scale(1.1);
-    transition: 1s;
-    cursor: pointer;
-}
-
-.menu {
-    flex: 3;
-    background-color: orange;
-}
+    @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+    .main {
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        width: 100vw;
+        height: 100vh;
+        flex-direction: column;
+        font-family: 'Josefin Sans', sans-serif;
+    }
+    /*** Styling Header ******/
+    
+    .header {
+        flex: 1;
+        background-color: rgb(255, 255, 255);
+        margin-bottom: px;
+    }
+    
+    .logo {
+        position: absolute;
+        margin-left: 300px;
+        margin-top: 20px;
+        width: 100px;
+    }
+    
+    .nav-bar {
+        margin-left: 1100px;
+    }
+    
+    .nav-bar>li {
+        list-style-type: none;
+        display: inline-block;
+        margin: 20px;
+        font-size: 22px;
+        color: rgb(185, 183, 183);
+    }
+    
+    .nav-bar>li:hover {
+        color: black;
+        cursor: pointer;
+        border-bottom: 5px solid #95cc5a;
+    }
+    /***** Styling Introduction **********/
+    
+    .intro {
+        flex: 3;
+        background-color: rgb(255, 255, 255);
+        height: 1000px;
+    }
+    
+    .intro>h2 {
+        font-size: 80px;
+        margin-left: 300px;
+    }
+    
+    .intro>p {
+        font-size: large;
+        margin-left: 300px;
+        margin-top: -20px;
+    }
+    
+    .intro>input {
+        margin-left: 300px;
+        margin-top: 20px;
+        width: 300px;
+        height: 45px;
+        border: none;
+    }
+    
+     :placeholder-shown {
+        font-size: large;
+    }
+    
+    .intro>button {
+        width: 150px;
+        height: 50px;
+        font-size: large;
+        background-image: linear-gradient(to right, #97ce5c, #649e2c);
+        border: none;
+        color: white;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+    
+    .intro-image {
+        width: 700px;
+        position: absolute;
+        margin-top: -450px;
+        margin-left: 280px;
+    }
+    /*********** Styling Welcome Section***************/
+    
+    .welcome {
+        flex: 3;
+        background-color: rgb(255, 255, 255);
+        margin-top: 300px;
+    }
+    
+    .chef-image {
+        width: 700px;
+        margin-left: 300px;
+        border-radius: 10px;
+    }
+    
+    .welcome-content {
+        position: absolute;
+        margin-left: 1020px;
+        margin-top: -500px;
+        font-size: x-large;
+    }
+    
+    .welcome-content>h6 {
+        font-size: 30px;
+        margin-bottom: -10px;
+        color: #fed04c;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 500;
+    }
+    
+    .welcome-content>h2 {
+        font-weight: 900;
+    }
+    
+    .welcome-content>p {
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgba(0, 0, 0, 0.5);
+    }
+    
+    .welcome-content>button {
+        width: 200px;
+        height: 50px;
+        font-size: 20px;
+        background-image: linear-gradient(to right, #97ce5c, #649e2c);
+        border: none;
+        color: white;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+    /******** Styling Choose Us Section ****************/
+    
+    .choose_us_head {
+        text-align: center;
+        margin: auto;
+    }
+    
+    .choose_us_head>h6 {
+        font-size: 30px;
+        color: #fed04c;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 500;
+        text-align: center;
+    }
+    
+    .choose_us_head>h2 {
+        font-weight: 900;
+        font-size: 50px;
+    }
+    
+    .choose_us {
+        flex: 3;
+        background-color: rgb(255, 255, 255);
+        height: 500px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .various-menu,
+    .delivery,
+    .offers {
+        height: 350px;
+        width: 400px;
+        background-color: rgb(255, 255, 255);
+        margin: 10px;
+        margin-top: 50px !important;
+        text-align: center;
+        margin-left: 80px !important;
+        font-size: x-large;
+    }
+    
+    .various-menu>img,
+    .delivery>img,
+    .offers>img {
+        width: 100px;
+        margin-top: 50px !important;
+    }
+    /**** Hover Effect on why Choose Us ****/
+    
+    .various-menu:hover,
+    .delivery:hover,
+    .offers:hover {
+        box-shadow: -5px 10px 15px rgba(0, 0, 0, 0.5);
+        border-left: 5px solid #95cc5a;
+        transform: scale(1.1);
+        transition: 1s;
+        cursor: pointer;
+    }
+    /***********Menu Section ************/
+    
+    .menu {
+        flex: 3;
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        justify-content: center;
+    }
+    
+    .menu_head {
+        text-align: center;
+        margin: auto;
+    }
+    
+    .menu_head>h6 {
+        font-size: 30px;
+        color: #fed04c;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 500;
+        text-align: center;
+    }
+    
+    .menu_head>h2 {
+        font-weight: 900;
+        font-size: 50px;
+    }
+    /****** Menu Side List *********/
+    
+    .menu .list ul {
+        margin-left: -170px;
+        margin-right: 80px;
+    }
+    
+    .menu .list ul li {
+        list-style: none;
+        display: block;
+    }
+    
+    div.main div.list ul li a {
+        text-decoration: none;
+        padding: 15px;
+        border-left: 5px solid lightgray;
+        display: block;
+        color: gray;
+        font-weight: 900;
+    }
+    
+    div.main div.list ul li a:hover {
+        border-left: 5px solid #f8c946;
+        background-color: rgba(214, 214, 214, 0.7);
+        color: #f8c946;
+        font-weight: 900;
+        width: 300%;
+    }
+    /********* Menu Item Cards **************/
+    
+    .chicken_masala,
+    .chicken_tikka,
+    .soup_sandwich {
+        height: 275px;
+        width: 300px;
+        background-color: rgb(255, 255, 255);
+        margin: 10px;
+        margin-top: 15px !important;
+        margin-left: 80px !important;
+        text-align: center;
+        font-size: x-large;
+        border: none;
+    }
+    
+    .chicken_masala:hover,
+    .chicken_tikka:hover,
+    .soup_sandwich:hover {
+        box-shadow: -5px 10px 15px rgba(0, 0, 0, 0.5);
+        border-bottom: 5px solid #95cc5a;
+        cursor: pointer;
+    }
+    
+    .box-3 {
+        margin-right: -100px;
+    }
+    
+    .box-3>img {
+        width: 430px !important;
+        margin-left: -60px !important;
+        margin-top: -30px !important;
+    }
+    
+    .chicken_masala>img,
+    .chicken_tikka>img,
+    .soup_sandwich>img {
+        width: 300px;
+        margin-top: 2px;
+        margin-left: -55px;
+    }
+    
+    .chicken_masala>h6,
+    .chicken_tikka>h6,
+    .soup_sandwich>h6 {
+        font-size: x-large;
+        margin-top: -1px;
+        margin-bottom: 10px;
+    }
+    
+    .chicken_masala>ins,
+    .chicken_tikka>ins,
+    .soup_sandwich>ins {
+        margin-top: -50px !important;
+        font-size: 20px;
+        color: #95cc5a;
+    }
+    
+    .box-3>h6 {
+        margin-top: -50px;
+    }
+    /***** History of FIGO **********/
+    
+    .history {
+        flex: 3;
+        background-color: #ffffff;
+        margin-top: 250px;
+    }
+    
+    .history_para>img {
+        width: 450px;
+        margin-left: 1100px;
+        margin-top: -350px;
+    }
+    
+    .history_para>h2 {
+        font-size: 60px;
+        margin-left: 250px;
+    }
+    
+    .history_para>p {
+        font-size: large;
+        margin-left: 250px;
+        margin-top: 50px !important;
+    }
+    
+    .history_para>button {
+        width: 180px;
+        height: 50px;
+        font-size: large;
+        background-image: linear-gradient(to right, #97ce5c, #649e2c);
+        border: none;
+        color: white;
+        border-radius: 3px;
+        cursor: pointer;
+        position: absolute;
+        margin-left: 250px;
+        margin-top: 5px;
+    }
+    
+    .history_para>h6 {
+        font-size: 30px;
+        color: #fed04c;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 500;
+        margin-left: 250px;
+    }
+    /******** Latest News Section **********/
+    
+    .news_head {
+        text-align: center;
+        margin: auto;
+    }
+    
+    .news_head>h6 {
+        font-size: 30px;
+        color: #fed04c;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 500;
+        text-align: center;
+    }
+    
+    .news_head>h2 {
+        font-weight: 900;
+        font-size: 50px;
+    }
+    /*** News Cards 3 Boxes ****/
+    
+    .latest_news {
+        flex: 3;
+        background-color: rgb(255, 255, 255);
+        height: 500px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-left: -100px !important;
+    }
+    
+    .latest_news>p {
+        font-weight: 200;
+        font-size: small;
+    }
+    
+    .box>p {
+        font-size: large;
+        font-weight: 200;
+        color: rgba(0, 0, 0, 0.5);
+    }
+    
+    .box>span {
+        font-size: 20px;
+        color: #f8c946;
+    }
+    
+    .box {
+        height: 350px;
+        width: 400px;
+        background-color: rgb(255, 255, 255);
+        margin: 10px;
+        margin-top: 50px !important;
+        text-align: left;
+        margin-left: 80px !important;
+        font-size: x-large;
+    }
+    
+    .box>img {
+        width: 100%;
+        height: 70%;
+        margin-top: 50px !important;
+    }
+    /************* Styling Subscription Section ***********/
+    
+    .update_head {
+        text-align: center;
+        margin: auto;
+        margin-top: 200px !important;
+    }
+    
+    .update_head>h6 {
+        font-size: 30px;
+        color: #fed04c;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 500;
+        text-align: center;
+    }
+    
+    .update_head>h2 {
+        font-weight: 900;
+        font-size: 50px;
+    }
+    
+    .update {
+        flex: 3;
+        background-color: rgb(255, 255, 255);
+        height: 500px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .update>input {
+        margin-top: 20px;
+        width: 500px;
+        height: 45px;
+        border: none;
+    }
+    
+    .update>input:hover {
+        border: 2px solid #95cc5a;
+        outline: none;
+        border-radius: 50px;
+    }
+    
+    .update>input:placeholder-shown {
+        font-size: 22px;
+        text-align: center;
+    }
+    
+    .update>button {
+        width: 60px;
+        height: 60px;
+        font-size: large;
+        background-image: linear-gradient(to right, #97ce5c, #649e2c);
+        border: none;
+        color: white;
+        border-radius: 3px;
+        cursor: pointer;
+        margin-top: 15px;
+        border-radius: 50%;
+        margin-left: 600px;
+        position: absolute;
+    }
+    
+    button>img {
+        width: 60px;
+        height: 50px;
+        margin-top: 8px;
+        margin-left: -2px;
+    }
+    /************Styling Footer ************/
+    
+    .footer {
+        flex: 3;
+        background-color: rgb(255, 255, 255);
+        height: 500px;
+        margin-top: 500px;
+        display: flex;
+    }
+    
+    .footer>img {
+        position: absolute;
+        margin-left: 250px;
+        margin-top: -150px;
+        width: 120px;
+    }
+    
+    .footer>p {
+        font-size: large;
+        margin-left: 250px;
+        margin-top: -20px;
+    }
+    
+    .footer-buttons {
+        display: flex;
+        flex-direction: row;
+        margin-top: 50px;
+        margin-left: -290px;
+    }
+    
+    .footer-box {
+        width: 30px;
+        height: 30px;
+        background-color: #649e2c;
+        margin: 10px;
+        border-radius: 5px;
+    }
+    
+    .inner {
+        width: 30%;
+        height: 30%;
+        text-align: center;
+        border: 2px solid rgba(255, 255, 255, 0.7);
+        border-radius: 2px;
+        margin: auto;
+        margin-top: 8px;
+    }
+    
+    table {
+        margin-top: -150px;
+        font-size: 25px;
+        margin-left: 150px;
+        text-align: left;
+    }
+    
+    td {
+        width: 400px;
+        color: rgba(0, 0, 0, 0.8);
+        padding-bottom: 20px;
+    }
+    
+    th {
+        padding-bottom: 50px;
+        font-weight: 900;
+    }
